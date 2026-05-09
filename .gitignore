@@ -1,0 +1,69 @@
+# Node / dependencias
+**/node_modules/
+frontend/dist/
+
+# Go
+backend/cmd/server/server
+backend/cmd/server/server.exe
+*.exe
+
+# Logs / temp
+*.log
+.DS_Store
+Thumbs.db
+
+# Credenciales y secretos (NUNCA commitear)
+.env
+.env.*
+!.env.example
+**/.env
+!**/.env.example
+*.pem
+*.p12
+*.pfx
+*.crt
+*.key
+*.keystore
+*.jks
+**/google-services.json
+**/GoogleService-Info.plist
+service-account*.json
+firebase-adminsdk*.json
+
+# Dumps de base de datos
+*.sql
+*.sqlite
+*.db
+*.dump
+*_backup_*.sql
+
+# Reportes de seguridad / auditorias
+*ZAP-Report*.html
+zap-report*.html
+*.zap
+
+# Vouchers / archivos subidos por usuarios
+backend/vouchers/
+backend/uploads/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Build artifacts mobile
+mobile/build/
+mobile/.dart_tool/
+mobile/ios/Pods/
+mobile/android/.gradle/
+mobile/android/app/build/
+
+# Sistema
+desktop.ini
+
+# Configuracion local de agentes / herramientas
+.claude/
+.codex/
+__tracked.txt
+__untracked.txt
+

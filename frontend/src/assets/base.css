@@ -1,0 +1,383 @@
+/* ═══════════════════════════════════════════════════════
+   PASAJE — Design System
+   Professional color palette for transport/travel
+   ═══════════════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* ── Brand Colors (Blue - matching Facturame/Venta) ── */
+  --brand-50: #EFF6FF;
+  --brand-100: #DBEAFE;
+  --brand-200: #BFDBFE;
+  --brand-300: #93C5FD;
+  --brand-400: #60A5FA;
+  --brand-500: #3B82F6;
+  --brand-600: #2563EB;
+  --brand-700: #1D4ED8;
+  --brand-800: #1E40AF;
+  --brand-900: #1E3A8A;
+  --brand-950: #172554;
+
+  /* ── Accent (Emerald - matching Facturame/Venta) ── */
+  --accent-50: #ECFDF5;
+  --accent-100: #D1FAE5;
+  --accent-200: #A7F3D0;
+  --accent-300: #6EE7B7;
+  --accent-400: #34D399;
+  --accent-500: #10B981;
+  --accent-600: #059669;
+  --accent-700: #047857;
+  --accent-800: #065F46;
+  --accent-900: #064E3B;
+
+  /* ── Neutrals (Slate) ── */
+  --slate-50: #f8fafc;
+  --slate-100: #f1f5f9;
+  --slate-200: #e2e8f0;
+  --slate-300: #cbd5e1;
+  --slate-400: #94a3b8;
+  --slate-500: #64748b;
+  --slate-600: #475569;
+  --slate-700: #334155;
+  --slate-800: #1e293b;
+  --slate-900: #0f172a;
+  --slate-950: #020617;
+
+  /* ── Status Colors ── */
+  --success-50: #ecfdf5;
+  --success-100: #d1fae5;
+  --success-500: #10b981;
+  --success-600: #059669;
+  --success-700: #047857;
+
+  --danger-50: #fef2f2;
+  --danger-100: #fee2e2;
+  --danger-500: #ef4444;
+  --danger-600: #dc2626;
+  --danger-700: #b91c1c;
+
+  --warning-50: #fffbeb;
+  --warning-100: #fef3c7;
+  --warning-500: #f59e0b;
+  --warning-600: #d97706;
+  --warning-700: #b45309;
+
+  --info-50: #eff6ff;
+  --info-100: #dbeafe;
+  --info-500: #3b82f6;
+  --info-600: #2563eb;
+
+  /* ── Semantic Tokens (Light) ── */
+  --color-background: #ffffff;
+  --color-background-soft: var(--slate-50);
+  --color-background-mute: var(--slate-100);
+  --color-background-elevated: #ffffff;
+
+  --color-surface: #ffffff;
+  --color-surface-hover: var(--slate-50);
+
+  --color-border: var(--slate-200);
+  --color-border-hover: var(--slate-300);
+  --color-border-focus: var(--brand-400);
+
+  --color-heading: var(--slate-900);
+  --color-text: var(--slate-700);
+  --color-text-muted: var(--slate-500);
+  --color-text-inverse: #ffffff;
+
+  --color-primary: var(--brand-600);
+  --color-primary-hover: var(--brand-700);
+  --color-primary-light: var(--brand-50);
+
+  --color-accent: var(--accent-600);
+  --color-accent-hover: var(--accent-700);
+  --color-accent-light: var(--accent-50);
+
+  /* ── Shadows (matching Venta) ── */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  /* ── Radius ── */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+
+  /* ── Spacing ── */
+  --nav-height: 64px;
+}
+
+/* ── Dark Mode ── */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--slate-950);
+    --color-background-soft: var(--slate-900);
+    --color-background-mute: var(--slate-800);
+    --color-background-elevated: var(--slate-900);
+
+    --color-surface: var(--slate-900);
+    --color-surface-hover: var(--slate-800);
+
+    --color-border: var(--slate-700);
+    --color-border-hover: var(--slate-600);
+    --color-border-focus: var(--brand-400);
+
+    --color-heading: var(--slate-50);
+    --color-text: var(--slate-300);
+    --color-text-muted: var(--slate-400);
+
+    --color-primary: var(--brand-400);
+    --color-primary-hover: var(--brand-300);
+    --color-primary-light: rgba(27, 85, 245, 0.12);
+
+    --color-accent: var(--accent-400);
+    --color-accent-hover: var(--accent-300);
+    --color-accent-light: rgba(6, 201, 170, 0.1);
+
+    --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.2);
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.2);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.2);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.35), 0 4px 6px -4px rgba(0, 0, 0, 0.2);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.25);
+  }
+}
+
+/* ── Reset & Base ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  line-height: 1.6;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font-family: inherit;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--color-primary-hover);
+}
+
+/* ── Utility Classes ── */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Glass Panel (matching Venta) */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px) saturate(180%);
+  border-radius: var(--radius-xl);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: var(--shadow-xl);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Premium Card */
+.premium-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--slate-200);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.premium-card:hover {
+  box-shadow: var(--shadow-lg);
+  border-color: var(--brand-100);
+}
+
+/* Premium Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--slate-100);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, var(--brand-400), var(--accent-500));
+  border-radius: 10px;
+  border: 2px solid var(--slate-100);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, var(--brand-500), var(--accent-600));
+}
+
+/* ══════════════════════════════════════
+   SweetAlert2 Custom Theme
+   ══════════════════════════════════════ */
+.swal-custom-popup {
+  border-radius: 20px !important;
+  padding: 2rem 1.75rem 1.5rem !important;
+  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.2), 0 8px 24px rgba(15, 23, 42, 0.1) !important;
+  border: 1px solid rgba(226, 232, 240, 0.6) !important;
+}
+
+.swal-no-border {
+  border: none !important;
+  margin: 0 auto 0.5rem !important;
+  padding: 0 !important;
+}
+
+.swal-no-border .swal2-icon-content {
+  display: none !important;
+}
+
+.swal2-popup .swal2-title {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  padding-top: 0.5rem !important;
+}
+
+.swal2-popup .swal2-html-container {
+  margin: 0.5rem 0 0 !important;
+  padding: 0 !important;
+}
+
+/* Buttons */
+.swal-btn-confirm {
+  padding: 0.7rem 1.75rem !important;
+  font-size: 0.92rem !important;
+  font-weight: 700 !important;
+  border-radius: 10px !important;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  letter-spacing: -0.01em !important;
+  box-shadow: 0 4px 12px rgba(27, 85, 245, 0.25) !important;
+  transition: all 0.2s ease !important;
+}
+
+.swal-btn-confirm:hover {
+  box-shadow: 0 6px 20px rgba(27, 85, 245, 0.35) !important;
+  transform: translateY(-1px) !important;
+}
+
+.swal-btn-cancel {
+  padding: 0.7rem 1.75rem !important;
+  font-size: 0.92rem !important;
+  font-weight: 600 !important;
+  border-radius: 10px !important;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  color: #64748b !important;
+  background: #f1f5f9 !important;
+  border: 1px solid #e2e8f0 !important;
+  transition: all 0.2s ease !important;
+}
+
+.swal-btn-cancel:hover {
+  background: #e2e8f0 !important;
+  color: #334155 !important;
+}
+
+.swal2-actions {
+  gap: 0.65rem !important;
+  margin-top: 1.25rem !important;
+}
+
+/* SweetAlert2 Premium Select — only when input select is present */
+.swal2-popup select.swal2-select {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0.8rem 2.5rem 0.8rem 1rem !important;
+  margin: 1rem auto 0 !important;
+  border: 2px solid #CBD5E1 !important;
+  border-radius: 12px !important;
+  background-color: #F8FAFC !important;
+  color: #0F172A !important;
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%2364748B' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat !important;
+  background-position: right 1rem center !important;
+  background-size: 20px !important;
+  cursor: pointer !important;
+  transition: all 0.25s ease !important;
+  outline: none !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06) !important;
+  line-height: 1.4 !important;
+}
+
+.swal2-popup select.swal2-select:hover {
+  border-color: #94A3B8 !important;
+  background-color: #F1F5F9 !important;
+}
+
+.swal2-popup select.swal2-select:focus {
+  border-color: #60A5FA !important;
+  background-color: white !important;
+  box-shadow: 0 0 0 4px rgba(96, 165, 250, 0.2) !important;
+}
+
+.swal2-popup select.swal2-select option {
+  padding: 0.5rem 1rem !important;
+  font-weight: 500 !important;
+}
+
+/* Toast */
+.swal2-popup.swal2-toast {
+  border-radius: 12px !important;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12) !important;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  padding: 0.6rem 1rem !important;
+  border: 1px solid rgba(226, 232, 240, 0.5) !important;
+}
+
+.swal2-popup.swal2-toast .swal2-title {
+  font-size: 0.88rem !important;
+  font-weight: 600 !important;
+}
+
+/* Animations */
+@keyframes swalFadeInUp {
+  from { opacity: 0; transform: translateY(20px) scale(0.95); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.swal2-show {
+  animation: swalFadeInUp 0.3s ease !important;
+}

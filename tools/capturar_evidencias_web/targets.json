@@ -1,0 +1,73 @@
+{
+  "baseUrl": "https://pasaje.facturame.online",
+  "outputDir": "../../evidencias_anexos/capturas_web",
+  "viewport": {
+    "width": 1440,
+    "height": 950
+  },
+  "targets": [
+    {
+      "name": "00_github_repositorio",
+      "title": "Repositorio GitHub oficial del proyecto",
+      "url": "https://github.com/Franciscoleochambiv/pasaje_pa2",
+      "waitMs": 3500
+    },
+    {
+      "name": "00_github_commits",
+      "title": "Historial de commits en GitHub",
+      "url": "https://github.com/Franciscoleochambiv/pasaje_pa2/commits/main",
+      "waitMs": 3500
+    },
+    {
+      "name": "01_despliegue_url_publica",
+      "title": "Sistema Pasaje desplegado en dominio publico",
+      "url": "https://pasaje.facturame.online"
+    },
+    {
+      "name": "02_login_publico",
+      "title": "Pantalla de login desde URL publica",
+      "url": "https://pasaje.facturame.online/login"
+    },
+    {
+      "name": "03_health_api",
+      "title": "API health live desde dominio publico",
+      "url": "https://pasaje.facturame.online/health/live"
+    },
+    {
+      "name": "04_health_ready_db",
+      "title": "API ready con conexion a base de datos",
+      "url": "https://pasaje.facturame.online/health/ready"
+    },
+    {
+      "name": "05_viajes_publico",
+      "title": "Modulo publico de busqueda de viajes",
+      "url": "https://pasaje.facturame.online/viajes"
+    },
+    {
+      "name": "06_consulta_reserva",
+      "title": "Modulo publico de consulta de reserva",
+      "url": "https://pasaje.facturame.online/consulta"
+    },
+    {
+      "name": "07_seguridad_admin_sin_token",
+      "title": "Seguridad: acceso admin sin token redirige a login",
+      "url": "https://pasaje.facturame.online/admin"
+    },
+    {
+      "name": "08_login_incorrecto",
+      "title": "Prueba funcional: login incorrecto muestra error",
+      "url": "https://pasaje.facturame.online/login",
+      "actions": [
+        { "type": "fill", "selector": "#login-email", "value": "usuario.invalido@pasaje.local" },
+        { "type": "fill", "selector": "#login-password", "value": "clave_incorrecta" },
+        { "type": "click", "selector": "button[type='submit']" },
+        { "type": "wait", "ms": 2500 }
+      ]
+    },
+    {
+      "name": "09_reporte_zap_html",
+      "title": "Reporte OWASP ZAP HTML local",
+      "url": "../../2026-05-06-ZAP-Report-.html"
+    }
+  ]
+}
