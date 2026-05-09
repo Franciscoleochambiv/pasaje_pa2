@@ -508,4 +508,17 @@ VITE_GOOGLE_CLIENT_ID=...
 
 ---
 
+## 15. Licencia
+
+Copyright © 2026 **Equipo 05** — **All Rights Reserved**.
+
+Este software es propiedad intelectual del Equipo 05. Su uso, copia, modificación, distribución o despliegue en producción **requiere autorización previa y por escrito** de los autores.
+
+Para licenciamiento comercial o despliegue productivo, contactar a:
+**grupo90pr@gmail.com**
+
+Ver el archivo [`LICENSE`](LICENSE) para los términos completos.
+
+---
+
 *Trabajo presentado por el **Equipo 05** — Curso de Ingeniería Web — Mayo de 2026.*
